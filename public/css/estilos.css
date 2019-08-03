@@ -34,7 +34,7 @@
     border-color: #5B696F !important;
 }
 
-#mydiv{
+.fondo-animado{
    
     background: linear-gradient(150deg, #fdfffe,  #c3c9c9, #808181);
     background-size: 400% 300%;
