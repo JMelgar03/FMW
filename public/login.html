@@ -13,8 +13,8 @@
 </head>
 <body>
     
-
-        <form class="form-signin">
+      
+        <div id="div-login" class="">
                 <div class="logo-login">
                 <img class="mb-4" src="img/FML-sinFondo.png" alt=""  width="100" height="100" style="">
                 </div>
@@ -25,15 +25,16 @@
                 <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
                 <div class="checkbox mb-3">
                   <label>
-                    <input type="checkbox" value="remember-me"> Remember me
+                    <input type="checkbox" value="remember-me"> Remember me form-signin
                   </label>
                 </div>
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-                <p class="mt-5 mb-3 text-muted">&copy; 2017-{{ site.time | date: "%Y" }}</p>
-              </form>
+                <button id="btn-login" class="btn btn-lg btn-block" type="button">Sign in</button>
+                <p class="mt-5 mb-3 text-muted">&copy; 2019 Fast Manage Web.}</p>
+              </div>
+              
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/controlador.js"></script>            
 </body>
