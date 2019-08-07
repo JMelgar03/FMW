@@ -8,3 +8,14 @@ function encoger(a){
  }
 
  //fin cambiar tamano tarjeta
+
+ //ocultar logo en nav
+
+function ocultarLogo(){
+   document.getElementById("img-logo").hidden="true";
+}
+
+//Mostrar el dash en el nav
+function mostrarDash(){
+   document.getElementById('dash').style.display = 'block';
+}
