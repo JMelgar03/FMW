@@ -7,9 +7,11 @@
     <title>Inicio</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="css/estilos.css">
-    
+    <link rel="shortcut icon" href="img/FML-sinFondo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -115,7 +117,7 @@
                   </ul>
                   <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-secondary my-2 my-sm-0" type="button">Search</button>
+                    <button class="btn btn-secondary my-2 my-sm-0 boton-search" type="button">Search</button>
                   </form>
                   <a href="registro.html" style="color:blanchedalmond" class="ml-5">Registrate</a>
                   <a href="login.html" style="color:blanchedalmond" class="ml-5">Login</a>
@@ -123,30 +125,44 @@
               </nav>
 
 
-    
+              
       
-      <div class="container-fluid">
+      <div class="container-fluid" >
         <div class="row">
-          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-            <div class="sidebar-sticky">
+          <nav class="col-md-2 d-none d-md-block bg-light sidebar" >
+            <div class="sidebar-sticky" >
                     
-              <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">
+              <ul class="nav flex-column" >
+                <li class="nav-item nav-lateral-elementos" >
+                   
+                  <a class="nav-link active" href="escritorio.html">
                     <span data-feather="home"></span>
-                    Dashboard <span class="sr-only">(current)</span>
+                   <label class="fas fa-tachometer-alt" > Escritorio </label> <span class="sr-only fas fa-tachometer-alt"> (current)</span>
                   </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item nav-lateral-elementos">
                   <a class="nav-link" href="#">
                     <span data-feather="file"></span>
-                    Orders
+                    <u><i class=" ml-4"></i> Inicio</u>
+                    
+                  </a>
+                </li>
+                <li class="nav-item nav-lateral-elementos">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file"></span>
+                    <i class=" ml-4"> Actualizaciones</i>
+                  </a>
+                </li>
+                <li class="nav-item nav-lateral-elementos">
+                  <a class="nav-link" href="entradas.html">
+                    <span data-feather="file"></span>
+                    <i class="fas fa-thumbtack"> Entradas</i>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="medios.html">
                     <span data-feather="shopping-cart"></span>
-                    Products
+                    <i class="fas fa-photo-video"> Medios</i>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -206,7 +222,7 @@
       
           <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-              <h1 class="h2">Dashboard</h1>
+              <h1 class="h2 titulos">Escritorio</h1>
               <div class="btn-toolbar mb-2 mb-md-0">
                 <div class="btn-group mr-2">
                   <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
@@ -223,16 +239,38 @@
 
             <div>
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-md-6">
                       <div class="card">
                         <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <h5 class="card-title titulos">Echa un vistaso!</h5>
+                          <hr>
+                          <div class="row">
+                            <a href="entradas.html" class="col-6"> <i class="fas fa-thumbtack iconos-contenedor"></i> Entradas #</a>
+                          <a href="paginas.html" class="col-6">    <i class="fas fa-file-alt iconos-contenedor"></i> Paginas #</a>
+                          <a href="comentarios.html" class="col-6"> <i class="fas fa-file-alt iconos-contenedor"></i> Comentarios #</a>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-6">
+
+                    <div class="form-group col-md-6 card">
+                      <div>
+                      <label for="exampleInputEmail1">Titulo</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Contenido</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="¿Que estas pensando?">
+                    </div>
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="button" class="btn boton-search btn-sm md-2" style="width: 25%">Solo Guardar</button>
+                    </div>
+
+                    <div class="col-md-6">
                       <div class="card">
                         <div class="card-body">
                           <h5 class="card-title">Special title treatment</h5>
@@ -249,6 +287,7 @@
 
       <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/controlador.js"></script>  
 
 </body>
