@@ -77,3 +77,9 @@ function registrarUsuario(){
 
    window.location = 'escritorio.html'; 
 }
+
+//-------------------------------------------sidebar
+$("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+ });
