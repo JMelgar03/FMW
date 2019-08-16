@@ -1,3 +1,8 @@
+(()=>
+{
+   var editor = new FroalaEditor('#example');
+})();
+
 //Cambiar tamano de tarjeta
 function agrandar(a){
    $("#"+a.id).css("width", "95%", "height","800px");
