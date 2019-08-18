@@ -1,7 +1,4 @@
-(()=>
-{
-   var editor = new FroalaEditor('#example');
-})();
+
 
 //Cambiar tamano de tarjeta
 function agrandar(a){
@@ -88,3 +85,15 @@ $("#menu-toggle").click(function(e) {
    e.preventDefault();
    $("#wrapper").toggleClass("toggled");
  });
+
+ function mostrarModal(a){
+    let image;
+    if(a==1){
+      image = 'img/FML-sinFondo.png';
+    }else{
+      image = 'img/multimedia.png';
+    }
+    $('#modal-body-image').html(`<img src="${image}" class="img-fluid" alt="Responsive image">`)
+    $("#exampleModalScrollable").modal('show');
+
+ }
