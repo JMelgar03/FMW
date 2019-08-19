@@ -24,6 +24,7 @@ function mostrarDash(){
 
 //validaciones-----------------------------------------------------------------------------------------------------------------------
 var campos = [
+   {id:"#txt-nombre-usuario",valido:false },
   {id:"#txt-nombre",valido:false },
   {id:"#txt-apellido",valido:false },
   {id:"#txt-email",valido:false },
@@ -46,7 +47,7 @@ function validarCampo(id){
       
    }
 
-   if(id =='#txt-nombre'||id =='#txt-apellido'){
+   if(id =='#txt-nombre'||id =='#txt-apellido'||id =='#txt-nombre-usuario'){
       let re = /[a-zA-Z áéíóúÁÉÍÓÚñÑ]/;
       prueba = re.test($(id).val());
       console.log($(id).val());

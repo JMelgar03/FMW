@@ -140,3 +140,16 @@ body{
 .biblioteca{
  margin-bottom: 5px !important;
 }
+
+/*--------------------------------Boton de subir medios--------------------*/
+.subir{
+  padding: 5px 10px;
+  background:  #5B696F;
+  color:#fff;
+  border:0px solid #fff;
+}
+
+.subir:hover{
+  color:#fff;
+  background:#1F628E;
+}

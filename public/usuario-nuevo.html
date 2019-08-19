@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nueva-Entrada</title>
+    <title>Nuevo Usuariotitulos</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="shortcut icon" href="img/FML-sinFondo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/froala_editor.pkgd.min.css">
-    <link rel="stylesheet" href="css/froala_style.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -39,7 +37,7 @@
                   <i class="fas fa-tachometer-alt "> Escritorio</i>
               </a>
               
-              <a href="entradas.html" class="elemento-seleccionado list-group-item list-group-item-action bg-light nav-lateral-elementos">
+              <a href="entradas.html" class="list-group-item list-group-item-action bg-light nav-lateral-elementos">
                 <i class="fas fa-thumbtack">Entradas</i>
               </a>
 
@@ -55,7 +53,7 @@
                 <a href="apariencia.html" class="list-group-item list-group-item-action bg-light nav-lateral-elementos">
                           <i class="fas fa-photo-video"> Apariencia</i>
                 </a>
-                <a href="usuarios.html" class="list-group-item list-group-item-action bg-light nav-lateral-elementos">
+                <a href="usuarios.html" class="elemento-seleccionado list-group-item list-group-item-action bg-light nav-lateral-elementos">
                     <i class="fas fa-photo-video"> Usuarios</i>
                 </a>  
             </div>
@@ -97,43 +95,67 @@
           <div class="container-fluid">
 
               <div class="mt-5 justify-content-between">
-                 <div class="mt-5"> <h1 class="titulos">Entradas</h1></div>
-                 <h2 class="titulos">Titulo:</h2>
-                 <div id="example">
+                 <div class="mt-5"> <h1 class="titulos">Nuevo Usuario</h1></div>
+                  <div class="row justify-content-between">
+                    
+                      <div class="m-4 col-12 col-md-6 justify-content-center">
+                        
+                        <label class="titulos" style="font-wight: bold;">Nombre Usuario:
+                            <span><input type="text" class="form-control" name="txt-nombre" id="txt-nombre"></span>      
+                        </label>
+                        
 
-                 </div>
-                 <hr>
-                 <h2 class="titulos">Contenido:</h2>
-                 <div id="example2">
+                                
+                                <label class="titulos" style="font-wight: bold;">Nombre:
+                                    <span><input type="text" class="form-control" name="txt-nombre" id="txt-nombre"></span>      
+                                </label>
+                                 
+                                
+                                
+                                        <label class="titulos" style="font-wight: bold;">Apellido:
+                                            <span><input type="text" class="form-control" name="txt-nombre" id="txt-nombre"></span>      
+                                        </label>
+                                        
 
-                </div>
+                                        
+                                                <label class="titulos" style="font-wight: bold;">Correo Electronico:
+                                                    <span><input type="text" class="form-control" name="txt-nombre" id="txt-nombre"></span>      
+                                                </label>
+                                                 
 
-                  <div class="row" >
-                     
-                    <button type="button" class="btn boton-search m-3">Publicar Entrada</button>
-                     
+                                                
+                                                        <label class="titulos" style="font-wight: bold;">Contraseña:
+                                                            <span><input type="text" class="form-control" name="txt-nombre" id="txt-nombre"></span>      
+                                                        </label>
+                                                        
+                                                     
+                                                                <label class="titulos" style="font-wight: bold;">Tipo Usuario:
+                                                                    <span>
+                                                                        <select name="slc-usuario" class="form-control" id="">
+                                                                            <option value="">Admin</option>
+                                                                        </select>
+                                                                    </span>      
+                                                                </label>
+                        <div>                                       
+                        <button type="button" class="btn boton-search">Crear Usuario</button>
+                        </div>
+                      </div>
 
-
-                
-                  </div>
-                  
+                    
            
-          </div>
-        </div>
+                </div>
+            </div>
         <!-- /#page-content-wrapper -->
     
       </div>
       </div>
       <!-- /#wrapper -->
-      
             
 
-
-      <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/popper.min.js"></script> 
-    <script src="js/froala_editor.pkgd.min.js"></script>
-    <script src="js/controlador.js"></script> 
-    <script src="js/froala-controlador.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/controlador.js"></script>  
+
 </body>
 </html>
