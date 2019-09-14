@@ -1,4 +1,15 @@
+//editorTexto
+$(document).ready(function(){
+   $('#txt-content').Editor();
 
+   $('#txt-content').Editor('setText', ['<p style="color:red;">Hola</p>']);
+
+   $('#btn-enviar').click(function(e){
+      e.preventDefault();
+      $('#texto').html($('#txt-content').Editor('getText'));
+      			
+   });
+});	
 
 //Cambiar tamano de tarjeta
 function agrandar(a){
