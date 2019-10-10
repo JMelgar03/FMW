@@ -1,15 +1,4 @@
-//editorTexto
-$(document).ready(function(){
-   $('#txt-content').Editor();
 
-   $('#txt-content').Editor('setText', ['<p style="color:red;">Hola</p>']);
-
-   $('#btn-enviar').click(function(e){
-      e.preventDefault();
-      $('#texto').html($('#txt-content').Editor('getText'));
-      			
-   });
-});	
 
 //Cambiar tamano de tarjeta
 function agrandar(a){
@@ -89,8 +78,30 @@ function registrarUsuario(){
          return;
    }
 
-   window.location = 'escritorio.html'; 
+   registrar();
+  
 }
+
+function registrar(){
+   var parametros = `apellido=${$("#txt-apellido").val()}&nombre=${$("#txt-nombre").val()}&correo=${$("#txt-email").val()}&contrasena=${$("#txt-password").val()}&nombreUsuario=${$("#txt-nombre-usuario").val()}`;
+
+   $.ajax({
+    url:'http://localhost:3333/usuarios/registrar',
+    data: parametros,
+    method:'POST',
+    dataType:'json',
+    success:(res)=>{
+        console.log('Success');
+        console.log(res);
+        window.location = "escritorio.html";
+    },
+    error:(error)=>{
+        console.error(error);
+    }
+});
+}
+
+
 
 //-------------------------------------------sidebar
 $("#menu-toggle").click(function(e) {
